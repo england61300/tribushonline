@@ -95,17 +95,37 @@ footer {
 
 /* Responsive design */
 @media (max-width: 600px) {
+    /* Reset header padding for smaller screens */
+    header {
+        padding: 5px 10px; /* Adjust as needed */
+    }
+
+    /* Align logo to the left and adjust margins */
+    .logo {
+        margin-left: 10px; /* Adjust margin as needed */
+        margin-right: auto; /* Pushes the logo to the far left */
+    }
+
+    /* Adjust nav ul for vertical stacking */
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Increase margin between nav items */
     nav ul li {
         margin: 10px 0;
-        width: 100%;
     }
 
-    nav ul li a {
-        padding: 10px 0;
+    /* Adjust search bar position */
+    #search-bar {
+        margin-top: 10px; /* Add space above the search bar */
+        width: 80%; /* Adjust width as needed */
+    }
+
+    /* Adjust suggestions list for mobile */
+    .suggestions {
+        top: 45px; /* Adjust top position to account for search bar */
+        width: 80%; /* Adjust width as needed */
     }
 }
