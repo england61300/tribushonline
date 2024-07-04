@@ -7,68 +7,38 @@ body {
 
 header {
     background-color: #333;
-    color: white;
-    padding: 1rem 0;
+    color: #fff;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 section {
-    padding: 2rem;
+    padding: 20px;
     text-align: center;
-}
-
-section#home {
-    background-color: #f4f4f4;
-}
-
-section#about {
-    background-color: #e2e2e2;
-}
-
-section#blog, section#portfolio, section#shop, section#videos {
-    background-color: #f4f4f4;
-}
-
-.blog-posts, .portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.blog-posts article, .portfolio-items .portfolio-item {
-    background: white;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    width: calc(33.333% - 2rem);
-    box-sizing: border-box;
-}
-
-.video-wrapper {
-    display: flex;
-    justify-content: center;
 }
 
 footer {
     background-color: #333;
-    color: white;
-    padding: 1rem 0;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
