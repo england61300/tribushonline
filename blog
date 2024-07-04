@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TriBush</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <article>
+                <h3>Blog Post Title 1</h3>
+                <p>Summary of blog post 1...</p>
+                <a href="blog-post-1.html">Read more</a>
+            </article>
+            <article>
+                <h3>Blog Post Title 2</h3>
+                <p>Summary of blog post 2...</p>
+                <a href="blog-post-2.html">Read more</a>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TriBush LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
