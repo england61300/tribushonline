@@ -55,3 +55,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
+        alert('Inspecting the code is disabled on this site.');
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
+        alert('Inspecting the code is disabled on this site.');
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
+        alert('Viewing the source code is disabled on this site.');
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
+        alert('Inspecting the code is disabled on this site.');
+        e.preventDefault();
+    }
+});
