@@ -12,12 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // Add more pages or articles here
     ];
 
+    console.log("JavaScript loaded");
+
     searchBar.addEventListener("input", (e) => {
+        console.log("Input event fired");
         const query = e.target.value.toLowerCase();
+        console.log("Query:", query);
         suggestions.innerHTML = "";
 
         if (query) {
             const filteredPages = pages.filter(page => page.name.toLowerCase().includes(query));
+            console.log("Filtered Pages:", filteredPages);
             filteredPages.forEach(page => {
                 const suggestionItem = document.createElement("li");
                 suggestionItem.textContent = page.name;
