@@ -34,6 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Handle enter key press
+    searchBar.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            const query = searchBar.value.toLowerCase();
+            const matchedPage = pages.find(page => page.name.toLowerCase() === query);
+            if (matchedPage) {
+                window.location.href = matchedPage.url;
+            }
+        }
+    });
+
     document.addEventListener("click", (e) => {
         if (!searchBar.contains(e.target) && !suggestions.contains(e.target)) {
             suggestions.innerHTML = "";
