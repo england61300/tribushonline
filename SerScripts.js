@@ -73,4 +73,8 @@ document.addEventListener("keydown", function(e) {
         alert('Inspecting the code is disabled on this site.');
         e.preventDefault();
     }
+    if (e.key === 'F12' || e.key === 'F11' || e.key === 'F10' || e.key === 'F9' || e.key === 'F8' || e.key === 'F7' || e.key === 'F6' || e.key === 'F5' || e.key === 'F4' || e.key === 'F3' || e.key === 'F2' || e.key === 'F1') {
+        alert('Function keys are disabled on this site.');
+        e.preventDefault();
+    }
 });
