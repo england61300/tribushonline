@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Portfolio", url: "portfolio.html" },
         { name: "Shop", url: "shop.html" },
         { name: "Videos", url: "videos.html" },
+        { name: "Etsy", url: "shop.html" },
+        { name: "Ebay", url: "shop.html" },
+        { name: "Podcast", url: "videos.html" },
+        { name: "YouTube", url: "videos.html" },
         // Add more pages or articles here
     ];
 
