@@ -57,6 +57,8 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    display: block; /* Makes the link fill the li */
+    text-align: center; /* Centers the text */
 }
 
 section {
