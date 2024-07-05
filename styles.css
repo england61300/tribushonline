@@ -25,7 +25,7 @@ nav {
 }
 
 .logo img {
-    height: 40px;
+    height: 40px; /* Adjust the size as needed */
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
     align-items: center;
     padding: 0;
     list-style: none;
-    flex-grow: 1;
+    flex-grow: 1; /* Allows the nav items to take remaining space */
 }
 
 nav ul li {
@@ -51,27 +51,24 @@ nav ul li {
 .suggestions {
     border: 1px solid #ccc;
     border-top: none;
-    max-height: 15.suggestions {
-    border: 1px solid #ccc;
-    border-top: none;
     max-height: 150px;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #fff;
     position: absolute;
     width: calc(100% - 12px);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     left: 0;
-    padding: 0;
 }
 
 .suggestions li {
     padding: 10px;
     cursor: pointer;
     list-style: none;
-    color: black;
+    color: #000;
+    text-align: left;
     white-space: nowrap;
-    border-bottom: 1px solid #eee;
 }
 
 .suggestions li:hover {
