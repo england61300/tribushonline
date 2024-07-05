@@ -63,11 +63,6 @@ nav ul li {
     z-index: 1000;
     left: 0;
     padding: 0;
-    display: none;
-}
-
-.suggestions.active {
-    display: block;
 }
 
 .suggestions li {
