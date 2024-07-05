@@ -53,6 +53,7 @@ nav ul li {
     border-top: none;
     max-height: 150px;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #fff;
     position: absolute;
     width: calc(100% - 12px);
