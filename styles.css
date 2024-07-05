@@ -51,7 +51,7 @@ nav ul li {
 .suggestions {
     border: 1px solid #ccc;
     border-top: none;
-    max-height: 150px;
+    max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #fff;
