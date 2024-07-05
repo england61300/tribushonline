@@ -69,6 +69,7 @@ nav ul li {
     color: #000;
     text-align: left;
     white-space: nowrap;
+    font-size: 12px;
 }
 
 .suggestions li:hover {
