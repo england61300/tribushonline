@@ -3,6 +3,7 @@ node_modules/
 
 # Environment variables file (Keep this private and never commit it)
 .env
+.bash
 
 # Log files
 *.log
