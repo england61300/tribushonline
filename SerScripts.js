@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Ebay", url: "shop.html" },
         { name: "Podcast", url: "videos.html" },
         { name: "YouTube", url: "videos.html" },
+        { name: "Privacy Policy", url: "privacy-policy.html" },
         // Add more pages or articles here
     ];
 
