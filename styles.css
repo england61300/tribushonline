@@ -110,7 +110,7 @@ footer {
     border: 2px solid #FF813F;
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
 }
 
 .donate-button:hover {
