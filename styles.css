@@ -99,6 +99,25 @@ footer {
     bottom: 0;
 }
 
+/* Donate button */
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #FF813F;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #FF813F;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.donate-button:hover {
+    background-color: #FF813F;
+    color: white;
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     /* Reset header padding for smaller screens */
