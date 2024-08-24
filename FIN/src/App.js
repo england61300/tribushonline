@@ -9,7 +9,9 @@ function App() {
         <h1>Financial Calculator SaaS</h1>
       </header>
       <main>
-        <Dashboard />
+        <div>
+          <p>This is a test content to check rendering.</p>
+        </div>
       </main>
       <footer>
         <p>© 2024 Your Company Name. All rights reserved.</p>
