@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const suggestions = document.getElementById("suggestions");
 
     const pages = [
-        { name: "Home", url: "links/index.html" },
+        { name: "Home", url: "index.html" },
         { name: "About", url: "links/about.html" },
         { name: "Blog", url: "links/blog.html" },
         { name: "Portfolio", url: "links/portfolio.html" },
