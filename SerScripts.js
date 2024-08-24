@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const suggestions = document.getElementById("suggestions");
 
     const pages = [
-        { name: "Home", url: "index.html" },
-        { name: "About", url: "about.html" },
-        { name: "Blog", url: "blog.html" },
-        { name: "Portfolio", url: "portfolio.html" },
-        { name: "Shop", url: "shop.html" },
-        { name: "Videos", url: "videos.html" },
-        { name: "Etsy", url: "shop.html" },
-        { name: "Ebay", url: "shop.html" },
-        { name: "Podcast", url: "videos.html" },
-        { name: "YouTube", url: "videos.html" },
-        { name: "Privacy Policy", url: "privacy-policy.html" },
+        { name: "Home", url: "links/index.html" },
+        { name: "About", url: "links/about.html" },
+        { name: "Blog", url: "links/blog.html" },
+        { name: "Portfolio", url: "links/portfolio.html" },
+        { name: "Shop", url: "links/shop.html" },
+        { name: "Videos", url: "links/videos.html" },
+        { name: "Etsy", url: "links/shop.html" },
+        { name: "Ebay", url: "links/shop.html" },
+        { name: "Podcast", url: "links/videos.html" },
+        { name: "YouTube", url: "links/videos.html" },
+        { name: "Privacy Policy", url: "links/privacy-policy.html" },
         // Add more pages or articles here
     ];
 
