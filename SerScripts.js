@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Podcast", url: "links/videos.html" },
         { name: "YouTube", url: "links/videos.html" },
         { name: "Privacy Policy", url: "links/privacy-policy.html" },
-        { name: "Fin", url: "FIN/index.html" }
+        { name: "Fin", url: "FIN/public/index.html" }
         // Add more pages or articles here
     ];
 
