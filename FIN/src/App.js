@@ -87,8 +87,9 @@ function App() {
         </button>
       </nav>
       <main>{renderTabContent()}</main>
-      <footer>
-        <p>© 2024 Your Company Name. All rights reserved.</p>
+       <footer>
+        <p>&copy; 2024 TriBush LLC. All rights reserved.</p>
+        <a href="https://buymeacoffee.com/tribush" class="donate-button">Buy Me a Coffee</a>
       </footer>
     </div>
   );
