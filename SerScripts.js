@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Podcast", url: "links/videos.html" },
         { name: "YouTube", url: "links/videos.html" },
         { name: "Privacy Policy", url: "links/privacy-policy.html" },
-        { name: "Fin", url: "FIN/public/index.html" }
+        { name: "Fin", url: "https://fin.tribushonline.com/" }
         // Add more pages or articles here
     ];
 
