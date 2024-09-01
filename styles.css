@@ -51,7 +51,7 @@ nav ul li {
     border-radius: 4px;
 }
 
-.suggestions {
+#suggestions {
     border: 1px solid #ccc;
     border-top: none;
     max-height: 300px;
@@ -65,7 +65,7 @@ nav ul li {
     left: 0;
 }
 
-.suggestions li {
+#suggestions li {
     padding: 10px;
     cursor: pointer;
     list-style: none;
@@ -75,7 +75,7 @@ nav ul li {
     font-size: 12px;
 }
 
-.suggestions li:hover {
+#suggestions li:hover {
     background-color: #f0f0f0;
 }
 
