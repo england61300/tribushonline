@@ -22,6 +22,20 @@
         .btn-green:hover {
             background-color: #218838;
         }
+
+        /* Ensure content is stacked correctly */
+        #debt-solutions {
+            text-align: center;
+        }
+
+        .content-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .button-top, .button-bottom {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -49,15 +63,21 @@
 
     <section id="debt-solutions">
         <h2>Debt Solutions</h2>
-
+        
         <!-- Green Button at the Top -->
-        <a href="https://www.sm.phpdebtsolutions.com/links/1290396/4176" class="btn-green">Get Started</a>
+        <div class="button-top">
+            <a href="https://www.sm.phpdebtsolutions.com/links/1290396/4176" class="btn-green">Get Started</a>
+        </div>
 
-        <img src="../images/debt.jpg" alt="Debt Solutions" style="width: 100%; max-width: 600px;">
-        <p>We offer personalized debt solutions to help you reduce your interest rates to 0%, lower your monthly payments, and avoid taking out new loans or filing for bankruptcy.</p>
+        <div class="content-wrapper">
+            <img src="../images/debt.jpg" alt="Debt Solutions" style="width: 100%; max-width: 600px;">
+            <p>We offer personalized debt solutions to help you reduce your interest rates to 0%, lower your monthly payments, and avoid taking out new loans or filing for bankruptcy.</p>
+        </div>
 
         <!-- Green Button at the Bottom -->
-        <a href="https://www.sm.phpdebtsolutions.com/links/1290396/4176" class="btn-green">Get Started</a>
+        <div class="button-bottom">
+            <a href="https://www.sm.phpdebtsolutions.com/links/1290396/4176" class="btn-green">Get Started</a>
+        </div>
     </section>
 
     <footer>
