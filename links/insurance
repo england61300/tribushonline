@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance - TriBush</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body oncontextmenu="return false;">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="TriBush Logo" style="height: 50px;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li>
+                    <input type="text" id="search-bar" placeholder="Search... " autocomplete="off">
+                    <ul id="suggestions" class="suggestions"></ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="insurance">
+        <h2>Insurance Services</h2>
+
+        <!-- Product Information -->
+        <div class="products">
+            <div class="product">
+                <h3>Life Insurance</h3>
+                <p>Learn how life insurance can protect your loved ones and provide peace of mind.</p>
+                <a href="life-insurance.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Companies Showcase -->
+        <div class="companies">
+            <h3>Our Partners</h3>
+            <div class="company">
+                <img src="path/to/company-logo.jpg" alt="PHP Agency" style="width: 150px;">
+                <p>PHP Agency is one of our trusted partners in providing top-notch insurance services.</p>
+                <a href="https://www.phpagency.com" class="btn" target="_blank">Visit PHP Agency</a>
+            </div>
+            <!-- Add more companies as needed -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>We’d love to hear from you! Fill out the form below or reach out directly.</p>
+            <!-- Google Form Embed -->
+            <iframe src="https://docs.google.com/forms/d/e/your-google-form-url/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- Direct Contact -->
+            <p>Or contact me directly at:</p>
+            <p>Email: <a href="mailto:devin.england61300+php@gmail.com">devin.england61300+php@gmail.com</a></p>
+            <p>Phone: (209) 604-2834</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TriBush LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="../SerScripts.js"></script>
+</body>
+</html>
