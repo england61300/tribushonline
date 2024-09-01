@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Privacy Policy", url: "links/privacy-policy.html" },
         { name: "Financial Calculator", url: "https://fin.tribushonline.com/" }
         { name: "Debt", url: "links/debt-solutions.html" },
+        { name: "Life", url: "links/insurance.html" },
+        { name: "Life Insurance", url: "links/insurance.html" },
+        { name: "Insurance", url: "links/insurance.html" },
+        { name: "IUL", url: "links/insurance.html" },
+        { name: "Term", url: "links/insurance.html" },
         // Add more pages or articles here
     ];
 
