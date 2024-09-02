@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Life", url: "links/life-insurance.html" },
         { name: "Life Insurance", url: "links/life-insurance.html" },
         { name: "Insurance", url: "links/insurance.html" },
-        { name: "IUL", url: "linksiul-/insurance.html" },
+        { name: "IUL", url: "links/iul-/insurance.html" },
         { name: "Term", url: "links/term-life-insurance.html" },
         { name: "Whole", url: "links/whole-life-insurance.html" },
         // Add more pages or articles here
