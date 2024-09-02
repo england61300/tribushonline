@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const suggestions = document.getElementById("suggestions");
 
     const pages = [
-        { name: "Home", url: "index.html" },
+        { name: "Home", url: "https://www.tribushonline.com/index.html" },
         { name: "About", url: "links/about.html" },
         { name: "Blog", url: "links/blog.html" },
-        { name: "Portfolio", url: "links/portfolio.html" },
+        { name: "Portfolio", url: "https://www.tribushonline.com/links/portfolio.html" },
         { name: "Shop", url: "links/shop.html" },
         { name: "Videos", url: "links/videos.html" },
         { name: "Etsy", url: "links/shop.html" },
