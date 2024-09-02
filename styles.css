@@ -66,10 +66,7 @@ nav ul li {
     padding: 0; /* Ensure no padding around the list */
     margin: 0; /* Ensure no margin around the list */
     list-style-type: none; /* Remove default list styling */
-}
-
-#suggestions:has(li) {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
