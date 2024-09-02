@@ -68,6 +68,11 @@ nav ul li {
     list-style-type: none; /* Remove default list styling */
 }
 
+#suggestions:has(li) {
+    display: flex;
+    flex-direction: column;
+}
+
 #suggestions li {
     padding: 10px;
     cursor: pointer;
