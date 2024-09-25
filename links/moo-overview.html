@@ -1,1 +1,89 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual of Omaha | Company Highlights Overview</title>
+    <meta name="description" content="Explore the company highlights of Mutual of Omaha, including their products, and easy and simple quick approval applications.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for the NLG Overview page */
+        .content {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pdf-viewer {
+            width: 100vw;
+            height: 1000px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact iframe {
+            width: 100vw;
+            height: 800px;
+            border: none;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="TriBush Logo" style="height: 50px;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li>
+                    <input type="text" id="search-bar" placeholder="Search... " autocomplete="off">
+                    <ul id="suggestions" class="suggestions"></ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Mutual Of Omaha | Company Highlights Overview</h2>
+        <p>Learn more about Mutual of Omaha through their comprehensive company highlights, outlining their products and easy application philosophy.</p>
+
+        <!-- Embed the PDF here -->
+        <iframe src="../pdf/Mutual_of_omaha_mat.pdf" class="pdf-viewer"></iframe>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact-form">
+            <h2>Contact Us to Learn More</h2>
+            <p>If you're interested in learning more about Mutual of Omaha or how it can benefit you, fill out the form below or reach out directly.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEV9F7lNCce5hn9jayn2wwtE0kKypc_ateZNdO2DUEvq43_g/viewform?usp=sf_link?embedded=true"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <script src="../SerScripts.js"></script>
+</body>
+</html>
