@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Blog", url: "https://www.tribushonline.com/links/blog.html" },
         { name: "Portfolio", url: "https://www.tribushonline.com/links/portfolio.html" },
         { name: "Shop", url: "https://www.tribushonline.com/links/shop.html" },
+        { name: "Hidden Gems", url: "https://www.tribushonline.com/links/hidden-gems.html" },
         { name: "Videos", url: "https://www.tribushonline.com/links/videos.html" },
         { name: "Podcast", url: "https://www.tribushonline.com/links/videos.html" },
         { name: "YouTube", url: "https://www.tribushonline.com/links/videos.html" },
