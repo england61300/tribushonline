@@ -6,19 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Home", url: "https://www.tribushonline.com/index.html" },
         { name: "About", url: "https://www.tribushonline.com/links/about.html" },
         { name: "Blog", url: "https://www.tribushonline.com/links/blog.html" },
-        { name: "Portfolio", url: "https://www.tribushonline.com/links/portfolio.html" },
         { name: "Shop", url: "https://www.tribushonline.com/links/shop.html" },
-        { name: "Videos", url: "https://www.tribushonline.com/links/videos.html" },
-        { name: "Podcast", url: "https://www.tribushonline.com/links/videos.html" },
-        { name: "YouTube", url: "https://www.tribushonline.com/links/videos.html" },
+        { name: "Hidden Gems", url: "https://www.tribushonline.com/links/hidden-gems.html" },
         { name: "Financial Calculator", url: "https://fin.tribushonline.com/" },
         { name: "Debt", url: "https://www.tribushonline.com/links/debt-solutions.html" },
-        { name: "Life", url: "https://www.tribushonline.com/links/life-insurance.html" },
-        { name: "Life Insurance", url: "https://www.tribushonline.com/links/life-insurance.html" },
-        { name: "Insurance", url: "https://www.tribushonline.com/links/insurance.html" },
-        { name: "IUL", url: "https://www.tribushonline.com/links/iul-/insurance.html" },
-        { name: "Term", url: "https://www.tribushonline.com/links/term-life-insurance.html" },
-        { name: "Whole", url: "https://www.tribushonline.com/links/whole-life-insurance.html" },
         // Add more pages or articles here
     ];
 
