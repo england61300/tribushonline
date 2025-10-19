@@ -50,27 +50,27 @@ document.addEventListener("DOMContentLoaded", () => {
             suggestions.innerHTML = "";
         }
     });
-});
+})//;
 
-document.addEventListener("keydown", function(e) {
-    if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
-        alert('Inspecting the code is disabled on this site.');
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
-        alert('Inspecting the code is disabled on this site.');
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
-        alert('Viewing the source code is disabled on this site.');
-        e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
-        alert('Inspecting the code is disabled on this site.');
-        e.preventDefault();
-    }
-    if (e.key === 'F12' || e.key === 'F11' || e.key === 'F10' || e.key === 'F9' || e.key === 'F8' || e.key === 'F7' || e.key === 'F6' || e.key === 'F5' || e.key === 'F4' || e.key === 'F3' || e.key === 'F2' || e.key === 'F1') {
-        alert('Function keys are disabled on this site.');
-        e.preventDefault();
-    }
-});
+//document.addEventListener("keydown", function(e) {
+    //if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
+        //alert('Inspecting the code is disabled on this site.');
+       // e.preventDefault();
+    //}
+    //if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
+       // alert('Inspecting the code is disabled on this site.');
+       // e.preventDefault();
+  //  }
+  //  if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
+    //    alert('Viewing the source code is disabled on this site.');
+    //    e.preventDefault();
+ //   }
+ //   if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
+     //   alert('Inspecting the code is disabled on this site.');
+   //     e.preventDefault();
+ //   }
+ //   if (e.key === 'F12' || e.key === 'F11' || e.key === 'F10' || e.key === 'F9' || e.key === 'F8' || e.key === 'F7' || e.key === 'F6' || e.key === 'F5' || e.key === 'F4' || e.key === 'F3' || e.key === 'F2' || e.key === 'F1') {
+ //       alert('Function keys are disabled on this site.');
+//        e.preventDefault();
+//    }
+//});
