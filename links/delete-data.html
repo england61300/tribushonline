@@ -3,56 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to request deletion of your BlockSurvival data from TriBush.">
     <meta name="google-adsense-account" content="ca-pub-2593431830550121">
     <title>Delete Player Data - TriBush</title>
-    <link rel="stylesheet" href="styles.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2593431830550121"
-     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body oncontextmenu="return false;">
     <header>
         <nav>
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../images/logo.png" alt="TriBush Logo" style="height: 50px;">
-                </a>
-            </div>
-            <ul>
+            <a class="brand" href="../index.html">
+                <img src="../images/logo.png" alt="TriBush Logo">
+                <span>TriBush</span>
+            </a>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
+                <li><a href="game-wiki.html">BlockSurvival Wiki</a></li>
+                <li><a href="asset-tool.html">Project Insight</a></li>
+                <li><a href="dev-log.html">Dev Log</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-search">
+                    <input type="text" id="search-bar" placeholder="Search the site" autocomplete="off">
+                    <ul id="suggestions" class="suggestions"></ul>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section id="delete-data">
-        <h1>Delete Player Data</h1>
-        <p>If you want to delete your player data, please fill out the form below:</p>
-       <form action="send-email.php" method="post" id="delete-data-form">
-            <label for="game-name">Game Name:</label>
-            <input type="text" id="game-name" name="game_name" required>
+    <main>
+        <section class="container hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Player privacy</span>
+                <h1>Request data deletion</h1>
+                <p>To delete your BlockSurvival data, email <a href="mailto:tribushonline@gmail.com">tribushonline@gmail.com</a> with the details below. Email is the only channel used for verification and confirmation.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="mailto:tribushonline@gmail.com">Start an email</a>
+                    <a class="button secondary" href="privacy-policy.html">Read the policy</a>
+                </div>
+            </div>
+        </section>
 
-            <label for="player-id">Player ID:</label>
-            <input type="text" id="player-id" name="player_id" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="confirmation">Type "Yes, delete my data" to confirm:</label>
-            <input type="text" id="confirmation" name="confirmation" required>
-
-            <button type="submit">Send</button>
-            <p>If this does not work please email tribushonline@gmail.com the exact same info, please wait 1-30 days for data to be deleted. Thank you.</p>
-        </form>
-    </section>
+        <section class="container section" id="delete-form">
+            <div class="section-header">
+                <h2 class="section-title">What to include</h2>
+                <p class="section-subtitle">Copy this template into your message so I can verify ownership and fulfill the request quickly.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card highlight">
+                    <h3>Email template</h3>
+                    <ul class="feature-list">
+                        <li>Subject: “Data deletion request – BlockSurvival”.</li>
+                        <li>Game name: BlockSurvival.</li>
+                        <li>Player ID: (found in the in-game settings menu).</li>
+                        <li>Email used in-game or for purchases.</li>
+                        <li>Confirmation statement: “Yes, delete my data.”</li>
+                    </ul>
+                    <p class="section-subtitle">Send the email from the address associated with your account whenever possible.</p>
+                </article>
+                <article class="card">
+                    <h3>Processing timeline</h3>
+                    <ul class="feature-list">
+                        <li>Requests are acknowledged within 7 days.</li>
+                        <li>Deletion completes within 30 days unless follow-up info is required.</li>
+                        <li>You’ll receive a confirmation email once data has been removed.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>All rights reserved.</p>
-        <a href="https://buymeacoffee.com/tribush" class="donate-button">Buy Me a Coffee</a>
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> TriBush. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="delete-data.html" class="active">Data Removal</a>
+                <a href="https://buymeacoffee.com/tribush" target="_blank" rel="noopener">Support the work</a>
+            </div>
+        </div>
+        <a href="https://buymeacoffee.com/tribush" class="donate-button" target="_blank" rel="noopener">Buy Me a Coffee</a>
     </footer>
 
+    <script>
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
     <script src="../SerScripts.js"></script>
 </body>
 </html>

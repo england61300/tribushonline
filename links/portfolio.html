@@ -3,90 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of TriBush projects including BlockSurvival and the Project Insight Unity toolkit.">
     <meta name="google-adsense-account" content="ca-pub-2593431830550121">
     <title>Portfolio - TriBush</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Styles for the grid cards on the portfolio page */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .grid-card {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .grid-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .grid-card h3 {
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .grid-card p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-    </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2593431830550121"
-     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body oncontextmenu="return false;">
     <header>
         <nav>
-            <div class="logo">
-                <a href="../index.html">
-                     <img src="../images/logo.png" alt="TriBush Logo" style="height: 50px;">
-                </a>
-            </div>
-            <ul>
+            <a class="brand" href="../index.html">
+                <img src="../images/logo.png" alt="TriBush Logo">
+                <span>TriBush</span>
+            </a>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
+                <li><a href="game-wiki.html">BlockSurvival Wiki</a></li>
+                <li><a href="asset-tool.html">Project Insight</a></li>
+                <li><a href="dev-log.html">Dev Log</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="hidden-gems.html">Hidden Gems</a></li>
-                <li>
-                    <input type="text" id="search-bar" placeholder="Search..." autocomplete="off">
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-search">
+                    <input type="text" id="search-bar" placeholder="Search the site" autocomplete="off">
                     <ul id="suggestions" class="suggestions"></ul>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="grid-container">
-            <div class="grid-card">
-                <h3>Project Title 1</h3>
-                <p>Description of project 1...</p>
+    <main>
+        <section class="container hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Selected work</span>
+                <h1>Arcade gameplay and Unity tooling.</h1>
+                <p>Here’s a look at the projects under the TriBush banner right now: BlockSurvival on Google Play and Project Insight for Unity teams, plus a few archived collaborations.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">Featured builds</a>
+                    <a class="button secondary" href="#capabilities">Capabilities</a>
+                </div>
             </div>
-            <div class="grid-card">
-                <h3>Project Title 2</h3>
-                <p>Description of project 2...</p>
+            <div class="hero-panels">
+                <article class="panel">
+                    <h2>Core strengths</h2>
+                    <ul class="feature-list">
+                        <li>Systems design grounded in narrative stakes.</li>
+                        <li>Unity editor scripting &amp; tooling.</li>
+                        <li>Documentation that empowers collaborators.</li>
+                    </ul>
+                </article>
+                <article class="panel">
+                    <h2>Currently open to</h2>
+                    <p>Short-term Unity tooling consultations and light collaboration on post-launch BlockSurvival content.</p>
+                    <a class="button secondary" href="mailto:tribushonline@gmail.com">Let’s talk</a>
+                </article>
             </div>
-            <!-- Add more grid cards for portfolio items as needed -->
-        </div>
-    </section>
+        </section>
+
+        <section class="container section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured projects</h2>
+                <p class="section-subtitle">A mix of shipped work, ongoing builds, and collaborative experiments.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <span class="meta">Game</span>
+                    <h3>BlockSurvival</h3>
+                    <p>A fast, one-finger arcade dodger where you slide to avoid falling blocks. Launched on Google Play in September 2025.</p>
+                    <ul class="feature-list">
+                        <li>Classic score chase and Battle Mode.</li>
+                        <li>Touch controls tuned for quick sessions.</li>
+                        <li>Upcoming: skins, daily rewards, buffs, economy.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <span class="meta">Unity Toolkit</span>
+                    <h3>Project Insight</h3>
+                    <p>Scans Unity folders, scenes, and assets to export readable .txt reports with hierarchy listings and unused asset detection.</p>
+                    <ul class="feature-list">
+                        <li>Serialized property and dependency capture.</li>
+                        <li>Configurable JSON-based exclusions.</li>
+                        <li>Optional code snippet export.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <span class="meta">Support</span>
+                    <h3>Documentation hub</h3>
+                    <p>Maintaining the BlockSurvival wiki and Project Insight documentation so players and teams always have an up-to-date reference.</p>
+                    <ul class="feature-list">
+                        <li>Launch guides and patch notes.</li>
+                        <li>Upcoming feature roadmaps.</li>
+                        <li>Email support for deeper questions.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="capabilities">
+            <div class="section-header">
+                <h2 class="section-title">Capabilities &amp; services</h2>
+                <p class="section-subtitle">How I can contribute to your project.</p>
+            </div>
+            <div class="grid-two">
+                <article class="card highlight">
+                    <h3>Arcade design &amp; UX</h3>
+                    <ul class="feature-list">
+                        <li>Score-chasing and difficulty ramp tuning.</li>
+                        <li>Touch control polish and accessibility considerations.</li>
+                        <li>Player-facing guides and roadmap communication.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Unity tooling &amp; reporting</h3>
+                    <ul class="feature-list">
+                        <li>Folder and scene scanning automation.</li>
+                        <li>Configurable reporting workflows.</li>
+                        <li>Support for data cleanup and asset audits.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="callout">
+            <div class="container callout-content">
+                <h2>Need a PDF or pitch deck?</h2>
+                <p>Email me with what you’re pitching and I’ll assemble a package with screenshots, metrics, and talking points.</p>
+                <a class="button primary" href="mailto:tribushonline@gmail.com">Request a package</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>All rights reserved.</p>
-        <a href="https://buymeacoffee.com/tribush" class="donate-button">Buy Me a Coffee</a>
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> TriBush. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="delete-data.html">Data Removal</a>
+                <a href="https://buymeacoffee.com/tribush" target="_blank" rel="noopener">Support the work</a>
+            </div>
+        </div>
+        <a href="https://buymeacoffee.com/tribush" class="donate-button" target="_blank" rel="noopener">Buy Me a Coffee</a>
     </footer>
 
+    <script>
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
     <script src="../SerScripts.js"></script>
 </body>
 </html>
