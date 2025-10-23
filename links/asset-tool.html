@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Documentation and feature overview for Project Insight, the Unity analytics toolkit by TriBush Interactive.">
+    <meta name="description" content="Project Insight scans Unity folders, scenes, and assets to generate readable reports with hierarchy exports and unused asset detection.">
     <meta name="google-adsense-account" content="ca-pub-2593431830550121">
-    <title>Project Insight Toolkit - TriBush Interactive</title>
+    <title>Project Insight Toolkit - TriBush</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body oncontextmenu="return false;">
@@ -13,7 +13,7 @@
         <nav>
             <a class="brand" href="../index.html">
                 <img src="../images/logo.png" alt="TriBush Logo">
-                <span>TriBush Interactive</span>
+                <span>TriBush</span>
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
@@ -34,111 +34,177 @@
     <main>
         <section class="container hero">
             <div class="hero-copy">
-                <span class="eyebrow">Unity analytics toolkit</span>
+                <span class="eyebrow">Unity project reporter</span>
                 <h1>Project Insight</h1>
-                <p>Project Insight turns raw scene data and playtest telemetry into actionable dashboards inside the Unity Editor. Track KPIs, catch performance spikes, and share reports without leaving your workflow.</p>
+                <p>Project Insight scans your folders, scenes, and assets to produce a clean .txt report that lists every GameObject, component, serialized property, and dependency. It also flags unused assets and can export configurable code snippets.</p>
                 <div class="hero-actions">
                     <a class="button primary" href="https://assetstore.unity.com/packages/slug/341086" target="_blank" rel="noopener">Get it on the Asset Store</a>
-                    <a class="button secondary" href="#modules">See the dashboards</a>
+                    <a class="button secondary" href="#features">See what it captures</a>
                 </div>
             </div>
             <div class="hero-panels">
                 <article class="panel">
-                    <h2>Version highlights</h2>
+                    <h2>First release</h2>
                     <ul class="feature-list">
-                        <li><strong>1.1</strong> – Live playtest telemetry, KPI thresholds, CSV export.</li>
-                        <li><strong>1.0</strong> – Scene complexity scoring, lighting budget tracker, collaborative notes.</li>
-                        <li><strong>0.9</strong> – Build size diffs, mesh &amp; material audits, profiler bookmarks.</li>
+                        <li>Folder hierarchy scanning.</li>
+                        <li>Full scene hierarchy export.</li>
+                        <li>Serialized component property extraction.</li>
+                        <li>Unused asset detection.</li>
+                        <li>Code snippet export (configurable).</li>
+                        <li>Summary report with total counts.</li>
+                        <li>Auto-folder creation &amp; config file generation.</li>
+                        <li>Improved scene safety handling and performance.</li>
                     </ul>
                 </article>
                 <article class="panel">
                     <h2>Compatibility</h2>
-                    <p>Supported Unity versions: 2021.3 LTS – 2023.2. Tested on Windows &amp; macOS.</p>
-                    <p>Optional scripting define <code>PROJECT_INSIGHT_TELEMETRY</code> enables advanced data capture helpers.</p>
+                    <p>Optimized for large Unity projects and safe to run thanks to built-in prompts that prevent data loss.</p>
+                    <p>Supports Unity 2021.3 LTS or newer on Windows, macOS, and Linux (Editor). Configuration lives in <code>ProjectInsight/ProjectInsightConfig.json</code>.</p>
                 </article>
             </div>
         </section>
 
-        <section class="container section" id="modules">
+        <section class="container section" id="features">
             <div class="section-header">
-                <h2 class="section-title">Dashboards at a glance</h2>
-                <p class="section-subtitle">Each dashboard ships with sample data, quick-start guides, and workflow callouts so you can tailor Insight to your studio.</p>
+                <h2 class="section-title">What it delivers</h2>
+                <p class="section-subtitle">Each scan produces detailed text logs and optional code exports your team can share immediately.</p>
             </div>
             <div class="card-grid">
                 <article class="card">
-                    <span class="meta">Scene overview</span>
-                    <h3>Complexity dashboard</h3>
-                    <p>Instantly see draw calls, mesh density, light counts, and shader usage per scene with auto-generated red flags for problem areas.</p>
-                    <ul class="feature-list">
-                        <li>Budget presets for mobile, PC, and console.</li>
-                        <li>Hotspot map that highlights heavy objects.</li>
-                        <li>Exportable snapshots for producers.</li>
-                    </ul>
+                    <span class="meta">Hierarchy</span>
+                    <h3>Complete scene listings</h3>
+                    <p>Traverse every scene in your project and output the full hierarchy, including nested GameObjects and components.</p>
                 </article>
                 <article class="card">
-                    <span class="meta">Telemetry</span>
-                    <h3>Playtest tracker</h3>
-                    <p>Stream anonymous session data from dev builds and visualize retention, difficulty spikes, and heatmap density in real time.</p>
-                    <ul class="feature-list">
-                        <li>REST &amp; CSV import pipelines.</li>
-                        <li>Alert rules for key metrics.</li>
-                        <li>Session comparison across patches.</li>
-                    </ul>
+                    <span class="meta">Assets</span>
+                    <h3>Serialized property capture</h3>
+                    <p>Document component properties, references, and settings to make reviews and audits simple.</p>
                 </article>
                 <article class="card">
-                    <span class="meta">Reporting</span>
-                    <h3>Insight briefs</h3>
-                    <p>Create shareable PDFs for stakeholders with a single click. Choose which widgets to include and schedule automatic exports.</p>
-                    <ul class="feature-list">
-                        <li>Brandable templates for studios.</li>
-                        <li>Slack &amp; email delivery integrations.</li>
-                        <li>Version diff callouts for patch reviews.</li>
-                    </ul>
+                    <span class="meta">Cleanup</span>
+                    <h3>Unused asset detection</h3>
+                    <p>Identify assets that aren’t referenced so you can trim project size and keep builds lean.</p>
                 </article>
             </div>
         </section>
 
-        <section class="container section" id="download">
+        <section class="container section" id="uses">
             <div class="section-header">
-                <h2 class="section-title">Get Project Insight</h2>
-                <p class="section-subtitle">Pick the option that best fits your pipeline. Both include ongoing updates and support.</p>
+                <h2 class="section-title">Main uses</h2>
+                <p class="section-subtitle">Teams rely on Project Insight to keep sprawling projects organized.</p>
             </div>
             <div class="grid-two">
                 <article class="card highlight">
-                    <h3>Asset Store release</h3>
-                    <p>Secure checkout through Unity and instant updates via the Package Manager.</p>
-                    <ul class="feature-list">
-                        <li>Includes sample dashboards &amp; scripts.</li>
-                        <li>Verified on Unity 2021 LTS – 2023.2.</li>
-                        <li>Email support within 48 hours.</li>
-                    </ul>
-                    <a class="button primary" href="https://assetstore.unity.com/packages/slug/341086" target="_blank" rel="noopener">Open Asset Store page</a>
+                    <h3>Audit a team build</h3>
+                    <p>Review exactly what’s shipping before a milestone and share the summary report with leads.</p>
                 </article>
                 <article class="card">
-                    <h3>Studio partnerships</h3>
-                    <p>Need custom widgets or integrations? I work with studios to tailor Insight to their reporting needs.</p>
+                    <h3>Optimize storage</h3>
+                    <p>Spot orphaned assets and unused scripts so you can reclaim disk space and keep imports fast.</p>
+                </article>
+                <article class="card">
+                    <h3>Document work</h3>
+                    <p>Hand collaborators a readable snapshot of the project structure without requiring them to open the editor.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="customize">
+            <div class="section-header">
+                <h2 class="section-title">Make it yours</h2>
+                <p class="section-subtitle">Tune every scan through JSON-based settings so the report focuses on what matters.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Configurable exclusions</h3>
+                    <p>Edit <code>ProjectInsightConfig.json</code> to skip folders, file types, or namespaces that aren’t relevant to your review.</p>
+                </article>
+                <article class="card">
+                    <h3>Optional code export</h3>
+                    <p>Enable snippet exports for specific directories to bundle related scripts alongside the report.</p>
+                </article>
+                <article class="card">
+                    <h3>Safe by design</h3>
+                    <p>Scene safety checks prompt you to save changes and halt scans if the project isn’t ready, preventing data loss.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="recommended">
+            <div class="section-header">
+                <h2 class="section-title">Recommended for</h2>
+                <p class="section-subtitle">If you need instant visibility into what’s inside a Unity project, this toolkit is for you.</p>
+            </div>
+            <div class="grid-two">
+                <article class="card">
+                    <h3>Developers &amp; teams</h3>
+                    <p>Perfect for studios maintaining large or legacy Unity projects and teams running project audits.</p>
+                </article>
+                <article class="card">
+                    <h3>QA &amp; educators</h3>
+                    <p>QA testers, instructors, and solo devs gain a complete project overview in seconds.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="details">
+            <div class="section-header">
+                <h2 class="section-title">Key features &amp; documentation</h2>
+                <p class="section-subtitle">Everything packaged with Project Insight v1.0.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Feature checklist</h3>
                     <ul class="feature-list">
-                        <li>Roadmap co-planning sessions.</li>
-                        <li>Private builds with experimental modules.</li>
-                        <li>Shared Slack channel for rapid feedback.</li>
+                        <li>Generates readable .txt logs of your entire project.</li>
+                        <li>Scans folders, files, and loaded scenes.</li>
+                        <li>Displays every GameObject, component, and serialized property.</li>
+                        <li>Detects unused or orphaned assets.</li>
+                        <li>Optional source code export for selected folders.</li>
+                        <li>Fully configurable via JSON exclude lists and toggles.</li>
+                        <li>Includes a summary section with totals and scan duration.</li>
+                        <li>Optimized for long-term maintainability.</li>
                     </ul>
-                    <a class="button secondary" href="contact.html">Request a discovery call</a>
+                </article>
+                <article class="card">
+                    <h3>Documentation</h3>
+                    <p>The package includes full documentation under <code>Assets/ProjectInsight/Documentation/ReadMe.txt</code> so you can reference setup steps offline.</p>
+                    <p class="section-subtitle">Keep the file in version control to track configuration changes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="get">
+            <div class="section-header">
+                <h2 class="section-title">Get Project Insight</h2>
+                <p class="section-subtitle">Available through the Unity Asset Store with ongoing maintenance updates.</p>
+            </div>
+            <div class="grid-two">
+                <article class="card highlight">
+                    <h3>Unity Asset Store</h3>
+                    <p>Purchase and download directly from Unity. Future updates appear automatically through the Package Manager.</p>
+                    <a class="button primary" href="https://assetstore.unity.com/packages/slug/341086" target="_blank" rel="noopener">Open the store page</a>
+                </article>
+                <article class="card">
+                    <h3>Questions or feedback</h3>
+                    <p>Email <a href="mailto:tribushonline@gmail.com">tribushonline@gmail.com</a> for support, roadmap suggestions, or collaboration inquiries.</p>
+                    <a class="button secondary" href="mailto:tribushonline@gmail.com">Send an email</a>
                 </article>
             </div>
         </section>
 
         <section class="callout">
             <div class="container callout-content">
-                <h2>Need deeper analytics?</h2>
-                <p>I also build bespoke Insight widgets, CI pipelines, and ingestion tools. Tell me about your project and we’ll scope the right data workflows together.</p>
-                <a class="button primary" href="contact.html">Start a conversation</a>
+                <h2>Need a custom report?</h2>
+                <p>If your studio needs bespoke output formats or automation hooks, reach out and we can scope additional tooling together.</p>
+                <a class="button primary" href="mailto:tribushonline@gmail.com">Start the conversation</a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-inner">
-            <p>&copy; <span id="year"></span> TriBush Interactive. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> TriBush. All rights reserved.</p>
             <div class="footer-links">
                 <a href="privacy-policy.html">Privacy</a>
                 <a href="delete-data.html">Data Removal</a>
