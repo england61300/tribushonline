@@ -2,75 +2,80 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBar = document.getElementById("search-bar");
     const suggestions = document.getElementById("suggestions");
 
+    if (!searchBar || !suggestions) {
+        return;
+    }
+
     const pages = [
-        { name: "Home", url: "https://www.tribushonline.com/index.html" },
-        { name: "About", url: "https://www.tribushonline.com/links/about.html" },
-        { name: "Blog", url: "https://www.tribushonline.com/links/blog.html" },
-        { name: "Shop", url: "https://www.tribushonline.com/links/shop.html" },
-        { name: "Hidden Gems", url: "https://www.tribushonline.com/links/hidden-gems.html" },
-        { name: "Financial Calculator", url: "https://fin.tribushonline.com/" },
-        { name: "Debt", url: "https://www.tribushonline.com/links/debt-solutions.html" }
+        { name: "Home", url: "index.html" },
+        { name: "BlockSurvival Wiki", url: "links/game-wiki.html" },
+        { name: "Project Insight", url: "links/asset-tool.html" },
+        { name: "Dev Log", url: "links/dev-log.html" },
+        { name: "Portfolio", url: "links/portfolio.html" },
+        { name: "About", url: "links/about.html" },
+        { name: "Contact", url: "links/contact.html", hidden: true },
+        { name: "Data Removal", url: "links/delete-data.html", hidden: true },
+        { name: "Privacy Policy", url: "links/privacy-policy.html", hidden: true }
     ];
 
-    console.log("JavaScript loaded");
-
-    searchBar.addEventListener("input", (e) => {
-        console.log("Input event fired");
-        const query = e.target.value.toLowerCase();
-        console.log("Query:", query);
+    const renderSuggestions = (filtered) => {
         suggestions.innerHTML = "";
 
-        if (query) {
-            const filteredPages = pages.filter(page => page.name.toLowerCase().includes(query));
-            console.log("Filtered Pages:", filteredPages);
-            filteredPages.forEach(page => {
-                const suggestionItem = document.createElement("li");
-                suggestionItem.textContent = page.name;
-                suggestionItem.addEventListener("click", () => {
-                    window.location.href = page.url;
-                });
-                suggestions.appendChild(suggestionItem);
-            });
+        if (filtered.length === 0) {
+            suggestions.classList.remove("show");
+            return;
         }
+
+        filtered.forEach(page => {
+            const suggestionItem = document.createElement("li");
+            suggestionItem.textContent = page.name;
+            suggestionItem.tabIndex = 0;
+            suggestionItem.addEventListener("click", () => {
+                window.location.href = page.url;
+            });
+            suggestionItem.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    window.location.href = page.url;
+                }
+            });
+            suggestions.appendChild(suggestionItem);
+        });
+
+        suggestions.classList.add("show");
+    };
+
+    searchBar.addEventListener("input", (event) => {
+        const query = event.target.value.trim().toLowerCase();
+
+        if (query.length === 0) {
+            suggestions.innerHTML = "";
+            suggestions.classList.remove("show");
+            return;
+        }
+
+        const filteredPages = pages.filter(page => !page.hidden && page.name.toLowerCase().includes(query));
+        renderSuggestions(filteredPages);
     });
 
-    // Handle enter key press
-    searchBar.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            const query = searchBar.value.toLowerCase();
-            const matchedPage = pages.find(page => page.name.toLowerCase() === query);
+    searchBar.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            const query = searchBar.value.trim().toLowerCase();
+            const matchedPage = pages.find(page => !page.hidden && page.name.toLowerCase() === query);
             if (matchedPage) {
                 window.location.href = matchedPage.url;
             }
-        }
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!searchBar.contains(e.target) && !suggestions.contains(e.target)) {
+        } else if (event.key === "Escape") {
             suggestions.innerHTML = "";
+            suggestions.classList.remove("show");
+            searchBar.blur();
         }
     });
-})//;
 
-//document.addEventListener("keydown", function(e) {
-    //if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
-        //alert('Inspecting the code is disabled on this site.');
-       // e.preventDefault();
-    //}
-    //if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
-       // alert('Inspecting the code is disabled on this site.');
-       // e.preventDefault();
-  //  }
-  //  if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
-    //    alert('Viewing the source code is disabled on this site.');
-    //    e.preventDefault();
- //   }
- //   if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
-     //   alert('Inspecting the code is disabled on this site.');
-   //     e.preventDefault();
- //   }
- //   if (e.key === 'F12' || e.key === 'F11' || e.key === 'F10' || e.key === 'F9' || e.key === 'F8' || e.key === 'F7' || e.key === 'F6' || e.key === 'F5' || e.key === 'F4' || e.key === 'F3' || e.key === 'F2' || e.key === 'F1') {
- //       alert('Function keys are disabled on this site.');
-//        e.preventDefault();
-//    }
-//});
+    document.addEventListener("click", (event) => {
+        if (!searchBar.contains(event.target) && !suggestions.contains(event.target)) {
+            suggestions.innerHTML = "";
+            suggestions.classList.remove("show");
+        }
+    });
+});
