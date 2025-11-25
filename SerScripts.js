@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Home", url: "index.html" },
         { name: "BlockSurvival Wiki", url: "links/game-wiki.html" },
         { name: "Project Insight", url: "links/asset-tool.html" },
+        { name: "NeoLock", url: "links/neolock.html" },
         { name: "Dev Log", url: "links/dev-log.html" },
         { name: "Portfolio", url: "links/portfolio.html" },
         { name: "About", url: "links/about.html" },
