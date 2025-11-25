@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeoLock is an offline password generator and AES-256 encrypted vault for Windows, macOS, and Linux. Generate, store, and search passwords locally with a master password.">
+    <meta name="google-adsense-account" content="ca-pub-2593431830550121">
+    <title>NeoLock - TriBush</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body oncontextmenu="return false;">
+    <header>
+        <nav>
+            <a class="brand" href="../index.html">
+                <img src="../images/logo.png" alt="TriBush Logo">
+                <span>TriBush</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="game-wiki.html">BlockSurvival Wiki</a></li>
+                <li><a href="asset-tool.html">Project Insight</a></li>
+                <li><a class="active" href="neolock.html">NeoLock</a></li>
+                <li><a href="dev-log.html">Dev Log</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-search">
+                    <input type="text" id="search-bar" placeholder="Search the site" autocomplete="off">
+                    <ul id="suggestions" class="suggestions"></ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Password generator &amp; encrypted vault</span>
+                <h1>NeoLock</h1>
+                <p>NeoLock is a fast, lightweight, and completely offline password generator and encrypted storage tool. Generate strong passwords, save them locally in an AES-256 vault, and keep everything private with a single master password.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="https://tribush.itch.io/neolock" target="_blank" rel="noopener">Get it on itch.io</a>
+                    <a class="button secondary" href="#buy">See all purchase options</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-icon">
+                    <img src="../images/NeoLock_Icon.png" alt="NeoLock icon">
+                </div>
+                <div class="hero-panels">
+                    <article class="panel">
+                        <h2>Privacy-first</h2>
+                        <ul class="feature-list">
+                            <li>Fully offline—no cloud, telemetry, or tracking.</li>
+                            <li>AES-256 encryption with PBKDF2 key derivation.</li>
+                            <li>Entries protected by your master password only.</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h2>Cross-platform</h2>
+                        <p>Windows, macOS, and Linux builds included. Portable and ready to run without installation.</p>
+                        <p class="section-subtitle">If you forget your master password, the vault cannot be recovered.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section" id="buy">
+            <div class="section-header">
+                <h2 class="section-title">Purchase NeoLock</h2>
+                <p class="section-subtitle">Choose the storefront you prefer. Every option includes Windows, macOS, and Linux builds.</p>
+            </div>
+            <div class="grid-three">
+                <article class="card highlight">
+                    <h3>itch.io</h3>
+                    <p>Download NeoLock on itch.io with ongoing updates and community posts.</p>
+                    <a class="button primary" href="https://tribush.itch.io/neolock" target="_blank" rel="noopener">Open itch.io</a>
+                </article>
+                <article class="card">
+                    <h3>Gumroad</h3>
+                    <p>Purchase through Gumroad and receive the full offline build bundle.</p>
+                    <a class="button secondary" href="https://tribush.gumroad.com/l/neolock" target="_blank" rel="noopener">Open Gumroad</a>
+                </article>
+                <article class="card">
+                    <h3>Ko-fi Shop</h3>
+                    <p>Buy via Ko-fi if you prefer supporting through tips and shop purchases.</p>
+                    <a class="button secondary" href="https://ko-fi.com/tribush/shop" target="_blank" rel="noopener">Open Ko-fi</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="features">
+            <div class="section-header">
+                <h2 class="section-title">Key features</h2>
+                <p class="section-subtitle">Built for simplicity, security, and speed.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Password generator</h3>
+                    <p>Create randomized passwords with custom length and character sets including uppercase, lowercase, numbers, and symbols.</p>
+                </article>
+                <article class="card">
+                    <h3>Encrypted vault</h3>
+                    <p>Save passwords locally with labels like “Steam”, “Email”, or “WiFi”. Unlock with your master password to view entries.</p>
+                </article>
+                <article class="card">
+                    <h3>Instant search &amp; list view</h3>
+                    <p>Search by name or scan every saved entry with a scrollable “Show All” mode.</p>
+                </article>
+                <article class="card">
+                    <h3>Offline by design</h3>
+                    <p>NeoLock never connects to the internet. No analytics, telemetry, or cloud syncing.</p>
+                </article>
+                <article class="card">
+                    <h3>Portable utility</h3>
+                    <p>Runs as a standalone app on Windows, macOS, and Linux. Keep it on a USB drive if you want.</p>
+                </article>
+                <article class="card">
+                    <h3>Security notice</h3>
+                    <p>If you forget your master password, your data cannot be recovered. This is intentional and part of the security model.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="privacy">
+            <div class="section-header">
+                <h2 class="section-title">Privacy-first approach</h2>
+                <p class="section-subtitle">Everything stays local on your device.</p>
+            </div>
+            <div class="grid-two">
+                <article class="card highlight">
+                    <h3>No servers, no tracking</h3>
+                    <p>NeoLock never sends data anywhere. The password database lives as <code>passwords.dat</code> on your machine.</p>
+                </article>
+                <article class="card">
+                    <h3>Master password protection</h3>
+                    <p>If someone copies your vault file, they cannot decrypt it without your key. Keep your master password safe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section" id="install">
+            <div class="section-header">
+                <h2 class="section-title">Install &amp; open NeoLock</h2>
+                <p class="section-subtitle">Step-by-step instructions for each platform.</p>
+            </div>
+            <div class="grid-three">
+                <article class="card">
+                    <h3>Windows</h3>
+                    <ol class="feature-list">
+                        <li>Download <strong>NeoLock_Windows_v1.0.0.zip</strong>.</li>
+                        <li>Extract the ZIP (Right-click &rarr; Extract All…).</li>
+                        <li>Open the folder and double-click <code>NeoLock.exe</code>.</li>
+                        <li>(Optional) Right-click <code>NeoLock.exe</code> &rarr; Create shortcut.</li>
+                    </ol>
+                </article>
+                <article class="card">
+                    <h3>Linux</h3>
+                    <ol class="feature-list">
+                        <li>Download <strong>NeoLock_Linux_v1.0.0.zip</strong>.</li>
+                        <li>Extract the ZIP (Right-click &rarr; Extract Here or run <code>unzip NeoLock_Linux_v1.0.0.zip</code>).</li>
+                        <li>Make the app executable: <code>chmod +x NeoLock.x86_64</code>.</li>
+                        <li>Run <code>./NeoLock.x86_64</code> and the window opens.</li>
+                    </ol>
+                </article>
+                <article class="card">
+                    <h3>macOS</h3>
+                    <ol class="feature-list">
+                        <li>Download <strong>NeoLock_macOS_v1.0.0.zip</strong> and double-click to extract.</li>
+                        <li>Move <code>NeoLock.app</code> wherever you like (Applications recommended).</li>
+                        <li>First launch: right-click <code>NeoLock.app</code> &rarr; Open, then click Open on the prompt.</li>
+                        <li>After approval, open NeoLock normally.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section class="callout">
+            <div class="container callout-content">
+                <h2>Need help or a feature?</h2>
+                <p>Email <a href="mailto:tribushonline@gmail.com">tribushonline@gmail.com</a> with support questions, feature requests, or collaboration ideas.</p>
+                <a class="button primary" href="mailto:tribushonline@gmail.com">Get support</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> TriBush. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="delete-data.html">Data Removal</a>
+                <a href="https://buymeacoffee.com/tribush" target="_blank" rel="noopener">Support the work</a>
+            </div>
+        </div>
+        <a href="https://buymeacoffee.com/tribush" class="donate-button" target="_blank" rel="noopener">Buy Me a Coffee</a>
+    </footer>
+
+    <script>
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
+    <script src="../SerScripts.js"></script>
+</body>
+</html>
