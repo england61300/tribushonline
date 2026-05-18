@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "BlockSurvival Wiki", url: "links/game-wiki.html" },
         { name: "Project Insight", url: "links/asset-tool.html" },
         { name: "NeoLock", url: "links/neolock.html" },
+        { name: "SiteScan - Offline SEO Scanner", url: "links/sitescan.html" },
         { name: "Dev Log", url: "links/dev-log.html" },
         { name: "Portfolio", url: "links/portfolio.html" },
         { name: "About", url: "links/about.html" },
